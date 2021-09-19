@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "dgSpecHash": "iCtNMtneQyM/Uc/X6KToqtqHMWnOQqCvZ5QfXMKEEe3OvIwJoFmctVYbIIVR3uC+yUQ8Qjn4P8ej/mANJBpcog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artik\\source\\repos\\POL\\POL\\POL\\POL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artik\\.nuget\\packages\\exiflib.pcl\\1.0.2-pre01\\exiflib.pcl.1.0.2-pre01.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\syncfusion.licensing\\18.4.0.43\\syncfusion.licensing.18.4.0.43.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.43\\syncfusion.xamarin.core.18.4.0.43.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\18.4.0.43\\syncfusion.xamarin.sfcombobox.18.4.0.43.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\xlabs.core\\2.3.0-pre05\\xlabs.core.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\xlabs.forms\\2.3.0-pre05\\xlabs.forms.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\xlabs.ioc\\2.3.0-pre05\\xlabs.ioc.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\xlabs.platform\\2.3.0-pre05\\xlabs.platform.2.3.0-pre05.nupkg.sha512",
+    "C:\\Users\\artik\\.nuget\\packages\\xlabs.serialization\\2.3.0-pre05\\xlabs.serialization.2.3.0-pre05.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"XLabs.Forms 2.3.0-pre05\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETStandard,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "XLabs.Forms",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

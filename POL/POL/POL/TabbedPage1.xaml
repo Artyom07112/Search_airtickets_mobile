@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             x:Class="POL.TabbedPage1">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Search" IconImageSource="Air.png">
+        <ContentPage.Content>
+            
+                <Frame BackgroundColor="SkyBlue" VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="VV_PP.gif" VerticalOptions="Center" IsAnimationPlaying="True"  ></Image>
+                        <combobox:SfComboBox HeightRequest="40" x:Name="first" MaximumDropDownHeight="200" IsEditableMode="true" ClearButtonColor="Red" VerticalOptions="Center" HorizontalOptions="Center">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>Brest</x:String>
+                                    <x:String>Minsk</x:String>
+                                    <x:String>Kobrin</x:String>
+                                    <x:String>Berlin</x:String>
+                                    <x:String>Paris</x:String>
+                                    <x:String>New York</x:String>
+                                    <x:String>China</x:String>
+                                    <x:String>Gonkong</x:String>
+                                    <x:String>Gomel</x:String>
+                                    <x:String>Kotowice</x:String>
+                                    <x:String>Milan</x:String>
+                                    <x:String>Moscow</x:String>
+                                    <x:String>Warsaw</x:String>
+                                    <x:String>Baku</x:String>
+                                    <x:String>Bratislava</x:String>
+                                    <x:String>Wellington</x:String>
+                                    <x:String>Glasgow</x:String>
+                                    <x:String>Jakarta</x:String>
+                                    <x:String>Innsbruck</x:String>
+                                    <x:String>Caracas</x:String>
+                                    <x:String>Guadalajara</x:String>
+                                    <x:String>Astana</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+
+                        <combobox:SfComboBox HeightRequest="40" x:Name="second" MaximumDropDownHeight="200" IsEditableMode="true" ClearButtonColor="Red">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>Brest</x:String>
+                                    <x:String>Minsk</x:String>
+                                    <x:String>Kobrin</x:String>
+                                    <x:String>Berlin</x:String>
+                                    <x:String>Paris</x:String>
+                                    <x:String>New York</x:String>
+                                    <x:String>China</x:String>
+                                    <x:String>Gonkong</x:String>
+                                    <x:String>Gomel</x:String>
+                                    <x:String>Kotowice</x:String>
+                                    <x:String>Milan</x:String>
+                                    <x:String>Moscow</x:String>
+                                    <x:String>Warsaw</x:String>
+                                    <x:String>Baku</x:String>
+                                    <x:String>Bratislava</x:String>
+                                    <x:String>Wellington</x:String>
+                                    <x:String>Glasgow</x:String>
+                                    <x:String>Jakarta</x:String>
+                                    <x:String>Innsbruck</x:String>
+                                    <x:String>Caracas</x:String>
+                                    <x:String>Guadalajara</x:String>
+                                    <x:String>Astana</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                        <Button Text="Search" Clicked="Button_Clicked"></Button>
+                    <ListView ItemsSource="{Binding Phones}" x:Name="List_air">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell Text="{Binding ON}" Detail="{Binding IN}" ImageSource="{Binding Imageph} " TextColor="Black" ></ImageCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        
+                    </ListView>
+
+                    </StackLayout>
+                </Frame>
+           
+        </ContentPage.Content>    
+    </ContentPage>
+
+
+
+    <ContentPage Title="News" IconImageSource="news.png" BackgroundColor="SkyBlue">
+      
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout BackgroundColor="SkyBlue">
+                <ListView x:Name="News1" HasUnevenRows="True" ItemsSource="{Binding News}" ItemTapped="News1_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell  Text="{Binding Title}" Detail="{Binding New}" ImageSource="{Binding Imagepath}" TextColor="Black">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+      
+    </ContentPage>
+
+
+
+
+    <ContentPage Title="Options" IconImageSource="Setting.png">
+        <Grid BackgroundColor="SkyBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Количество детей, кол-во (до 18 лет)" Grid.Column="0" Grid.Row="1" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <Button Text="+" BorderColor="White"  WidthRequest="50" HeightRequest="50" BorderRadius="50" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked_plus"></Button>
+            <Button Text="-" BorderColor="White" Grid.Row="1" Grid.Column="3" WidthRequest="50" HeightRequest="50" BorderRadius="50" Clicked="Button_Clicked_minus"></Button>
+            <Label x:Name="Kolvo_deti" Text="0" TextColor="Black" Grid.Column="2" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            <Label Text="Наличие багажа, Кг" Grid.Column="0" Grid.Row="3" FontSize="Body" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <Button Text="+" BorderColor="White"  WidthRequest="50" HeightRequest="50" BorderRadius="50" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked_bagazplus"></Button>
+            <Button Text="-" BorderColor="White" Grid.Row="3" Grid.Column="3" WidthRequest="50" HeightRequest="50" BorderRadius="50" Clicked="Button_Clicked_bagazminus"></Button>
+            <Label x:Name="Bagaz" Text="0" TextColor="Black" Grid.Column="2" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            
+        </Grid>
+        
+    </ContentPage>
+
+
+
+    <ContentPage Title=""  IconImageSource="cart.png" IsTabStop="False" BackgroundColor="SkyBlue">
+        <Grid x:Name="grid" IsVisible="false">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Text="Ориентировачная цена" TextColor="Violet" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center" Grid.ColumnSpan="5" Grid.Row="1"></Label>
+            <Label Text="Наличие промокода" TextColor="Black" FontSize="Body" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" Grid.Row="4"></Label>
+            <Entry x:Name="Promo" Keyboard="Text" Grid.Row="4" Grid.Column="2"></Entry>
+            <Button Text="Проверить" WidthRequest="100" BorderRadius="32" Clicked="Button_Clicked_CheckPromo" Grid.Row="5" Grid.Column="2"></Button>
+            <Label x:Name="SUMMA" Text="Сумма без учета скидки" TextColor="Black" Grid.Column="0"   Grid.ColumnSpan="3" FontSize="15" Grid.Row="7"></Label>
+            <BoxView Color="Black" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="5"></BoxView>
+            <Label x:Name="Vivod" Text="0" TextColor="Black"  FontSize="15" Grid.Row="7" Grid.Column="3" HorizontalOptions="Center" ></Label>
+            <Label Text="руб" TextColor="Black" FontSize="18" HorizontalOptions="Center" Grid.Column="4" Grid.Row="7"></Label>
+            <Label Text="Скидка от приложения составляет:" TextColor="Black" Grid.ColumnSpan="3" FontSize="15"  Grid.Row="8" Grid.Column="0"></Label>
+            <Label x:Name="Skidon" Text="0" FontAttributes="Bold"  FontSize="15" TextColor="Black" HorizontalOptions="Center"  Grid.Row="8" Grid.Column="3"></Label>
+            <Label Text="руб" TextColor="Black" FontSize="15" HorizontalOptions="Center" Grid.Column="4" Grid.Row="8"></Label>
+            <BoxView Color="Black" Grid.ColumnSpan="5" Grid.Row="9"></BoxView>
+            <Label Text="Сумма с учетом скидки :" FontSize="18" TextColor="Black" Grid.Row="10" Grid.ColumnSpan="3"></Label>
+            <Label Text="0" x:Name="OBZ"  FontSize="15" TextColor="Black" Grid.Row="10" Grid.Column="3" HorizontalOptions="Center" ></Label>
+            <Label Text="руб" TextColor="Black" FontSize="18"  HorizontalOptions="Center" Grid.Column="4" Grid.Row="10"></Label>
+        </Grid>
+        
+    </ContentPage>
+</TabbedPage>
